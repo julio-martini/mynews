@@ -1,0 +1,43 @@
+.bg-info {
+    background-color: #444444;
+}
+
+body {
+    background-color: rgb(148, 148, 148);
+}
+
+.card-body {
+    background-color: black;
+    color: white;
+    text-align: justify;
+
+    height: auto;
+}
+
+.card-title {
+    color:white;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card-text {
+    color: grey;
+    font-size: 16px;
+}
+
+.card-img-top{
+    width: auto;
+    height: 200px;
+
+}
+
+.card{
+    background-color: black;
+    margin: 8px;
+}
+
+#listaDeNoticias .btn-primary {
+    width: 100%;
+    vertical-align: middle;
+
+}
