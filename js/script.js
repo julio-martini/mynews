@@ -4,6 +4,8 @@ const CATEGORY = categoryChoice
 const API_KEY = password //change password to API_Key or add a key.js with your api_key
 const boardNews = document.querySelector('#listaDeNoticias')
 
+
+//avaiable categories
 const BUSINESS = 'category=business&'
 const ENTERTAINMENT = 'category=entertainment&'
 const GENERAL = 'category=general&'
@@ -13,9 +15,7 @@ const SPORTS = 'category=sports&'
 const TECHNOLOGY = 'category=technology&'
 const NOCHOICE = ''
 
-// fetch(`${BASE_URL}/top-headlines?country=br&apiKey=${API_KEY}`)
-//     .then( res => res.json())
-//     .then((data) => console.log(data))
+//main function
 
 async function getNews() {
     boardNews.innerHTML = ""
@@ -45,9 +45,13 @@ async function getNews() {
 
 getNews()
 
+// function for button technology
+
 function tech() { categoryChoice = TECHNOLOGY;
     getNews()
 }
+
+//function to return to main category (no category)
 
 function lastNews() { categoryChoice = NOCHOICE;
     getNews()
